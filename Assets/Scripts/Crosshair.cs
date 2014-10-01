@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Crosshair : MonoBehaviour 
+public class Crosshair : MonoBehaviour
 {
-	public float filter = 0.1f;
+    public float filter = 0.1f;
     public float crosshairDistance = 10f;
 
-	void Update() 
-	{
+    void Update()
+    {
         var inputModule = UnityEngine.EventSystems.EventSystemManager.currentSystem.currentInputModule as HmdInputModule;
         if (inputModule && inputModule.currentDevice == HmdInputModule.Device.Mouse) {
             var mousePosition = new Vector3(Input.mousePosition.x * 2, Input.mousePosition.y * 2, crosshairDistance);
