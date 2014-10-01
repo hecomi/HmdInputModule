@@ -13,6 +13,7 @@ HMD Input Module for Unity
 ------
 * `GraphicRaycaster` の代わりに `CrosshairRaycaster` を Canvas にアタッチ
 * `EventSystem` オブジェクトの既存の Input Module を disabled にし、`HmdInputModule` をアタッチ
+* 適当なオブジェクトに `HmdTapDetector` をアタッチ
 
 既知の問題点
 ------------
