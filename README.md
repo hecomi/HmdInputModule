@@ -9,6 +9,15 @@ HMD Input Module for Unity
 ----
 * Unity 4.6.0b17
 
+使い方
+------
+* `GraphicRaycaster` の代わりに `CrosshairRaycaster` を Canvas にアタッチ
+* `EventSystem` オブジェクトの既存の Input Module を disabled にし、`HmdInputModule` をアタッチ
+
+既知の問題点
+------------
+* `StandaloneInputModule` と併用しようとしていますが、マウスの座標がうまく変換できていません。
+
 LICENSE
 -------
 The MIT License (MIT)
